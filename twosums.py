@@ -3,7 +3,8 @@ target = int(input())
 result = []
 
 for i in range(len(inputlist)):
-    for j in range(i,len(inputlist)):
+    for j in range(i+1,len(inputlist)):
         if(inputlist[i] + inputlist[j] == target): 
-            print(list({i,j}))
+            result.append({i,j})
             
+print(result)            
